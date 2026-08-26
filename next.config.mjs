@@ -18,14 +18,10 @@ const nextConfig = {
 
     return config;
   },
-  experimental: {
-    ppr: false,
-    reactCompiler: true,
-    dynamicIO: false,
-    turbo: {
-      resolveAlias: {
-        underscore: 'lodash',
-      },
+  reactCompiler: true,
+  turbopack: {
+    resolveAlias: {
+      underscore: 'lodash',
     },
   },
 };
